@@ -1,11 +1,16 @@
-import java.util.Arrays;
-import java.util.List;
+import url.UrlProperties;
+
+import java.net.MalformedURLException;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello");
-        List<Integer> list = Arrays.asList(5,8,12,4,56,2,23,4,6);
-        System.out.println(list.stream().reduce((x,y) -> x+y).get() / list.size());
+        try {
+            UrlProperties urlProperties = new UrlProperties("http://dome.netact.nsn-rdnet.net/mpp/projects/cm/www/coverage/data/daily/xml/2017-08-26.com.nsn.cm.vs.radio.xml");
+            urlProperties.showMethods();
+        } catch (MalformedURLException e) {
+            System.out.println("MalformedURLException occurred");
+        }
 
 
     }
