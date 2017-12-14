@@ -1,5 +1,5 @@
 package testing.testingDerivativesAsParentObjects.interfaceAndImplementations;
 
-public interface StringCounter {
+public interface StringLengthCounter {
 	int getStringLength(String s);
 }

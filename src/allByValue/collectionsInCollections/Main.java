@@ -17,6 +17,6 @@ public class Main {
     private static void printCollection(Collection<String> collection) {
 		System.out.printf("Collection contains: %d elements\n", collection.size());
 		System.out.println("Element list:");
-		collection.forEach(s -> System.out.printf("\t%s\n", s));
+		collection.forEach(s -> System.out.printf("\t%strings\n", s));
 	}
 }

@@ -1,9 +1,9 @@
 package testing.testingDerivativesAsParentObjects.interfaceAndImplementations;
 
 import org.junit.Test;
-import testing.testingDerivativesAsParentObjects.StringCounterTest;
+import testing.testingDerivativesAsParentObjects.StringLengthCounterTest;
 
-public class BadStringCounterTest {
+public class BadStringLengthCounterImplTest {
 
 	@Test
 	public void otherImplTest() {
@@ -14,8 +14,8 @@ public class BadStringCounterTest {
 	// This test should fail as it is an example of bad interface implementation
 	// which must be detected by tests
 	public void asStringCounterTest() {
-	    BadStringCounter badStringCounter = new BadStringCounter();
-		StringCounterTest.run(badStringCounter);
+	    BadStringLengthCounterImpl badStringCounter = new BadStringLengthCounterImpl();
+		StringLengthCounterTest.run(badStringCounter);
 	}
 
 }

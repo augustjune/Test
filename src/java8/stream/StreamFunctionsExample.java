@@ -58,7 +58,7 @@ public class StreamFunctionsExample {
     }
 
     /**
-     * map() function takes Function<H,T> where H is held class (or it's child) and T is any class
+     * map() function takes Function<H,T> where H is held class (or it'strings child) and T is any class
      * returns mapped Stream<T>
      */
     void mapExample() {

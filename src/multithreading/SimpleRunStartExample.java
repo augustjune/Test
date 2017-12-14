@@ -16,8 +16,8 @@ public class SimpleRunStartExample implements RunStartExample{
     private Thread threadB = new Thread(taskB);
 
     /**
-     * threadA will end it's work and only then function thread will continue with starting threadB
-     * threadB may finish before function's finish as well as after
+     * threadA will end it'strings work and only then function thread will continue with starting threadB
+     * threadB may finish before function'strings finish as well as after
      * result:
      *      function start
      *      threadA work
@@ -32,7 +32,7 @@ public class SimpleRunStartExample implements RunStartExample{
     }
 
     /**
-     * threadA will end it's work, then function thread will run threadB and then end own work
+     * threadA will end it'strings work, then function thread will run threadB and then end own work
      * result:
      *      function start
      *      threadA work
@@ -49,8 +49,8 @@ public class SimpleRunStartExample implements RunStartExample{
     }
 
     /**
-     * function will start threadA, then without waiting for threadA's finish start threadB and then without
-     * waiting for threadA or threadB finish will finish it's work
+     * function will start threadA, then without waiting for threadA'strings finish start threadB and then without
+     * waiting for threadA or threadB finish will finish it'strings work
      * result:
      *      function start
      *      NO PREDICTABLE RESULT
@@ -63,11 +63,11 @@ public class SimpleRunStartExample implements RunStartExample{
     }
 
     /**
-     * function will start threadA, then without waiting for threadA's finish run threadB and after threadB's finish
+     * function will start threadA, then without waiting for threadA'strings finish run threadB and after threadB'strings finish
      * will end own work
      * result:
      *      NO PREDICTABLE RESULT
-     *      but function will finish only after threadB's finish
+     *      but function will finish only after threadB'strings finish
      */
     @Override
     public void startRunExample() {

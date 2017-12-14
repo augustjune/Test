@@ -19,7 +19,7 @@ public class TryCatchFinally {
      * System.err vs. System.out
      *
      * System.out is buffered output stream, but System.err isn't
-     * so below method's output may be:
+     * so below method'strings output may be:
      *      Exception in thread "main" java.lang.Error
      *      sout
      *
@@ -62,7 +62,7 @@ public class TryCatchFinally {
     /**
      * catch is used during run-time (not compile-time) so it is caught by Object type (not reference type)
      * BUT we must add catch(Throwable) statement, because it is checking if we handle exception in compile-time
-     * that's why the output will be next:
+     * that'strings why the output will be next:
      *      catch Exception
      *      next statement
      */

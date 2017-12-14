@@ -2,17 +2,17 @@ package testing.testingDerivativesAsParentObjects;
 
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
-import testing.testingDerivativesAsParentObjects.interfaceAndImplementations.StringCounter;
+import testing.testingDerivativesAsParentObjects.interfaceAndImplementations.StringLengthCounter;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class StringCounterTest {
-	private static StringCounter instance;
+public class StringLengthCounterTest {
+	private static StringLengthCounter instance;
 
-	public static void run(StringCounter stringCounter) {
-		instance = stringCounter;
-		assertTrue(JUnitCore.runClasses(StringCounterTest.class).wasSuccessful());
+	public static void run(StringLengthCounter stringLengthCounter) {
+		instance = stringLengthCounter;
+		assertTrue(JUnitCore.runClasses(StringLengthCounterTest.class).wasSuccessful());
 	}
 
 	@Test
