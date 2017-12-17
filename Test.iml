@@ -38,5 +38,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="scala-sdk-2.12.1" level="project" />
+    <orderEntry type="library" name="junit-hierarchicalcontextrunner-4.12.1" level="project" />
   </component>
 </module>
